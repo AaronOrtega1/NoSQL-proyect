@@ -85,21 +85,23 @@ def delete_flight(id):
 
 
 def main():
-    log.info(f"Welcome to books catalog. App requests to: {FLIGHTS_API_URL}")
+    log.info(f"Welcome to flights catalog. App requests to: {FLIGHTS_API_URL}")
 
     parser = argparse.ArgumentParser()
 
     list_of_actions = ["search", "get", "update", "delete"]
     parser.add_argument("action", choices=list_of_actions,
-                        help="Action to be user for the books library")
+                        help="Action to be user for the flights library")
     parser.add_argument("-i", "--id",
-                        help="Provide a book ID which related to the book action", default=None)
-    parser.add_argument("-r", "--rating",
-                        help="Search parameter to look for books with average rating equal or above the param (0 to 5)", default=None)
-    parser.add_argument("-p", "--pages",
-                        help="Search parameter to look for books with number of pages equal or above the given param", default=None)
-    parser.add_argument("-t", "--title",
-                        help="Search parameter to look for books with the same title as the given one", default=None)
+                        help="Provide a flight ID which related to the flight action", default=None)
+    parser.add_argument("-t", "--to",
+                        help="Search parameter to look for flights with certain destination", default=None)
+    parser.add_argument("-d", "--day",
+                        help="Search parameter to look for flights with a specific day", default=None)
+    parser.add_argument("-m", "--month",
+                        help="Search parameter to look for flights with a specific month", default=None)
+    parser.add_argument("-y", "--year",
+                        help="Search parameter to look for flights with a specific year", default=None)
     parser.add_argument("-l", "--limit",
                         help="Search parameter to limit the results of the operation", default=None)
     parser.add_argument("-s", "--skip",

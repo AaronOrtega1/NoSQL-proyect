@@ -19,26 +19,6 @@ def create_flight(request: Request, flight: Flight = Body(...)):
     return created_flight
 
 
-@router.get("/destinations/most_flights", response_description="Get all flights by destination", response_model=List[Flight])
-async def get_destination_with_num_flights(request: Request, to: str = "", day: int = 0, month: int = 0, year: int = 0, limit: int = 0, skip: int = 0):
-
-    num_flights_by_destination_and_month = list(request.app.database["flight"].aggregate([
-        {"$group": {"_id": {"destination": "$to", "month": {
-            "$month": "$departure_date"}}, "total_flights": {"$sum": 1}}},
-        {"$sort": {"total_flights": DESCENDING}}
-    ]))
-
-    result = []
-    for flight in num_flights_by_destination_and_month:
-        result.append({
-            "destination": flight["_id"]["destination"],
-            "month": flight["_id"]["month"],
-            "num_flights": flight["total_flights"]
-        })
-
-    return result
-
-
 @router.get("/", response_description="Get all flights by destination", response_model=List[Flight])
 def flight(request: Request, to: str = "", day: int = 0, month: int = 0, year: int = 0, limit: int = 0, skip: int = 0):
     flight = list(request.app.database["flight"].find())

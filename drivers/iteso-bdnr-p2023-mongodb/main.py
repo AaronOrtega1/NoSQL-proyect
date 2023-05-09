@@ -10,6 +10,7 @@ DB_NAME = os.getenv('MONGODB_DB_NAME', 'iteso')
 
 app = FastAPI()
 
+
 @app.on_event("startup")
 def startup_db_client():
     app.mongodb_client = MongoClient(MONGODB_URI)
@@ -22,4 +23,5 @@ def shutdown_db_client():
     app.mongodb_client.close()
     print("Bye bye...!!")
 
-app.include_router(book_router, tags=["books"], prefix="/book")
+
+app.include_router(book_router, tags=["flights"], prefix="/flight")
