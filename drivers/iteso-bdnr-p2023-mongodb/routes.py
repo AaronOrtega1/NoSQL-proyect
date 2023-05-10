@@ -51,7 +51,7 @@ def find_flight(id: str, request: Request):
 
 
 @router.put("/{id}", response_description="Update a flight by id", response_model=Flight)
-def update_flight(id: str, request: Request, flight: FlightUpdate = Flight(...)):
+def update_flight(id: str, request: Request, flight: FlightUpdate = Body(...)):
     if (flight := request.app.database["flights"].find_one({"_id": id})) is not None:
         my_query = {"_id": id}
         updated_flight = flight.dict(exlude_unset=True)

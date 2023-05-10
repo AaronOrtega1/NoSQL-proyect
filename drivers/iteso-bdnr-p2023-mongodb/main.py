@@ -3,6 +3,7 @@ import os
 
 from fastapi import FastAPI
 from routes import router as flight_router
+from pymongo import MongoClient
 
 
 MONGODB_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
