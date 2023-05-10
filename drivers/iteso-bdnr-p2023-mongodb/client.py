@@ -18,6 +18,7 @@ FLIGHTS_API_URL = os.getenv("FLIGHTS_API_URL", "http://localhost:8000")
 
 
 def print_flight(flight):
+    print(f"Matched flights: {len(flight.keys())}")
     for k in flight.keys():
         print(f"{k}: {flight[k]}")
     print("="*50)
@@ -54,9 +55,11 @@ def get_flight_by_id(id):
 def update_flight(id):
     suffix = f"/flight/{id}"
     endpoint = FLIGHTS_API_URL + suffix
-    response = requests.put(endpoint)
+    response = requests.get(endpoint)
     if response.ok:
         json_resp = response.json()
+        print_flight(json_resp)
+        print("Provide the new flight data:")
         data = {}
         for key in json_resp:
             updated_values = input(f"{key} ({json_resp[key]}):")
@@ -69,6 +72,7 @@ def update_flight(id):
             print("Flight has been updated")
         else:
             print("Flight was not updated")
+            print(response.json)
     else:
         print(f"Error: {response}")
 

@@ -20,14 +20,14 @@ def create_flight(request: Request, flight: Flight = Body(...)):
 
 
 @router.get("/", response_description="Get all flights by destination", response_model=List[Flight])
-def flight(request: Request, to: str = "", day: int = 0, month: int = 0, year: int = 0, limit: int = 0, skip: int = 0):
-    flight = list(request.app.database["flight"].find())
+def list_flights(request: Request, to: str = "", day: int = 0, month: int = 0, year: int = 0, limit: int = 0, skip: int = 0):
+    flight = list(request.app.database["flights"].find())
     flight_by_destiny = list(
-        request.app.database["flight"].find({"destiny": to}))
-    flight_by_day = list(request.app.database["flight"].find({"day": day}))
+        request.app.database["flights"].find({"destiny": to}))
+    flight_by_day = list(request.app.database["flights"].find({"day": day}))
     flight_by_month = list(
-        request.app.database["flight"].find({"month": month}))
-    flight_by_year = list(request.app.database["flight"].find({"month": year}))
+        request.app.database["flights"].find({"month": month}))
+    flight_by_year = list(request.app.database["flights"].find({"year": year}))
 
     if (to != ""):
         return flight_by_destiny
@@ -52,7 +52,7 @@ def find_flight(id: str, request: Request):
 
 @router.put("/{id}", response_description="Update a flight by id", response_model=Flight)
 def update_flight(id: str, request: Request, flight: FlightUpdate = Flight(...)):
-    if (request.app.database["flights"].find_one({"_id": id})) is not None:
+    if (flight := request.app.database["flights"].find_one({"_id": id})) is not None:
         my_query = {"_id": id}
         updated_flight = flight.dict(exlude_unset=True)
         new_values = {"$set": {updated_flight}}
