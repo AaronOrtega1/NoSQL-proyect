@@ -2,7 +2,7 @@
 import os
 
 from fastapi import FastAPI
-from routes import router as book_router
+from routes import router as flight_router
 
 
 MONGODB_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
@@ -24,4 +24,4 @@ def shutdown_db_client():
     print("Bye bye...!!")
 
 
-app.include_router(book_router, tags=["flights"], prefix="/flight")
+app.include_router(flight_router, tags=["flights"], prefix="/flight")
