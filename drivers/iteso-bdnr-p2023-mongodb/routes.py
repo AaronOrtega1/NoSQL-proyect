@@ -7,7 +7,6 @@ from model import Flight, FlightUpdate
 
 router = APIRouter()
 
-
 @router.post("/", response_description="Post a new flight", status_code=status.HTTP_201_CREATED, response_model=Flight)
 def create_flight(request: Request, flight: Flight = Body(...)):
     flight = jsonable_encoder(flight)
@@ -17,7 +16,6 @@ def create_flight(request: Request, flight: Flight = Body(...)):
     )
 
     return created_flight
-
     
 @router.get("/month-count")
 async def get_month_count(request: Request):
