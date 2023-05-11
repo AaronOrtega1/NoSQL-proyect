@@ -1,0 +1,101 @@
+id,airline,username,from,to,day,month,year,age,gender,reason,stay,transit
+131,Volaris,Emiliano Torres,SJC,GDL,23,8,2014,77,undisclosed,Back Home,Home,Car rental
+104,Delta Airlines,Ramon Rubio,GDL,PDX,19,6,2017,82,male,Back Home,Home,Pickup
+59,Volaris,Juan Pablo Maldonado,GDL,SJC,27,2,2021,10,unspecified,On vacation/Pleasure,Hotel,Mobility as a service
+1,Delta Airlines,Javier Vega,JFK,LAX,10,8,2017,10,male,Back Home,Home,Public Transportation
+101,American Airlines,Alicia Ponce,SJC,JFK,17,3,2019,80,female,Back Home,Home,Public Transportation
+180,American Airlines,Juan Jose Rios,PDX,SJC,17,10,2019,70,unspecified,On vacation/Pleasure,Short-term homestay,Car rental
+64,Alaska,Federico Hernandez,JFK,PDX,13,5,2016,65,unspecified,Back Home,Home,Own car
+178,Volaris,Rebeca Morales,GDL,SJC,20,7,2015,6,undisclosed,Back Home,Home,Airport cab
+13,Alaska,Adrian Torres,JFK,PDX,11,8,2017,48,undisclosed,Back Home,Home,Own car
+164,Volaris,Fernando Guzman,SJC,PDX,29,11,2014,56,unspecified,On vacation/Pleasure,Home,Public Transportation
+110,Alaska,Luciana Mercado,LAX,GDL,29,7,2018,77,undisclosed,Back Home,Home,Car rental
+128,American Airlines,Camila Ortiz,PDX,LAX,16,9,2021,66,male,Back Home,Home,Public Transportation
+67,Alaska,Lorena Hernandez,JFK,PDX,7,4,2022,59,undisclosed,Business/Work,Short-term homestay,Public Transportation
+37,Aeromexico,Laura Torres,SJC,GDL,28,4,2013,64,unspecified,Back Home,Home,Pickup
+139,Alaska,Montserrat Ibarra,PDX,LAX,23,6,2017,31,female,Back Home,Home,Own car
+63,Volaris,Ana Martinez,JFK,SJC,14,8,2013,83,female,Back Home,Home,Mobility as a service
+119,Delta Airlines,Estefania Garcia,JFK,GDL,16,2,2021,45,undisclosed,Business/Work,Short-term homestay,Pickup
+181,Alaska,Paola Velazquez,SJC,LAX,23,6,2015,53,female,Business/Work,Short-term homestay,Own car
+29,Alaska,Miguel Vazquez,JFK,SJC,23,8,2013,27,unspecified,Business/Work,Short-term homestay,Airport cab
+45,Volaris,Miguel Vazquez,LAX,PDX,22,6,2021,34,female,Business/Work,Friend/Family,Own car
+117,Delta Airlines,Alejandro Reyes,SJC,JFK,30,3,2017,43,male,Business/Work,Hotel,Mobility as a service
+123,Volaris,Samantha Rios,GDL,JFK,6,12,2016,79,male,Business/Work,Short-term homestay,Mobility as a service
+20,Volaris,Valeria Chavez,GDL,LAX,26,10,2013,61,unspecified,Business/Work,Friend/Family,Airport cab
+54,American Airlines,Valeria Leon,PDX,GDL,19,3,2015,46,undisclosed,On vacation/Pleasure,Hotel,Mobility as a service
+8,Volaris,Camila Ortiz,JFK,LAX,19,2,2017,65,female,Back Home,Home,Public Transportation
+77,Alaska,Javier Vega,PDX,JFK,4,11,2017,87,unspecified,Business/Work,Hotel,Mobility as a service
+63,Alaska,Oscar Cruz,LAX,GDL,17,5,2021,60,unspecified,On vacation/Pleasure,Home,Mobility as a service
+117,American Airlines,Pablo Contreras,PDX,LAX,26,5,2014,57,undisclosed,On vacation/Pleasure,Friend/Family,Mobility as a service
+104,Alaska,Gustavo Ibarra,JFK,PDX,2,5,2016,43,undisclosed,Back Home,Home,Public Transportation
+29,American Airlines,Oscar Cruz,GDL,PDX,9,7,2021,18,female,On vacation/Pleasure,Short-term homestay,Car rental
+84,Alaska,Gloria Torres,JFK,LAX,27,10,2015,46,undisclosed,On vacation/Pleasure,Hotel,Pickup
+142,Alaska,Cristian Valenzuela,SJC,PDX,24,2,2023,65,unspecified,On vacation/Pleasure,Hotel,Car rental
+24,American Airlines,Carlos Fuentes,LAX,SJC,25,12,2017,45,unspecified,Back Home,Home,Pickup
+132,Aeromexico,Ricardo Castro,LAX,PDX,20,3,2018,12,undisclosed,On vacation/Pleasure,Hotel,Mobility as a service
+152,Alaska,Cristian Valenzuela,GDL,SJC,27,7,2013,38,undisclosed,Back Home,Home,Car rental
+23,Volaris,Elena Zuniga,GDL,SJC,2,12,2015,25,unspecified,Business/Work,Friend/Family,Own car
+157,Delta Airlines,Manuel Chavez,JFK,LAX,16,11,2015,15,undisclosed,Business/Work,Home,Airport cab
+8,Alaska,Fernando Reyes,LAX,PDX,17,12,2014,18,female,Business/Work,Hotel,Mobility as a service
+69,American Airlines,Mariana Aguilar,SJC,GDL,28,8,2018,5,female,On vacation/Pleasure,Friend/Family,Pickup
+73,Volaris,Karla Diaz,SJC,GDL,15,4,2017,3,female,Business/Work,Hotel,Car rental
+179,Alaska,Rebeca Morales,GDL,SJC,2,2,2022,81,unspecified,On vacation/Pleasure,Friend/Family,Public Transportation
+170,Alaska,Marcela Zavala,LAX,JFK,13,4,2013,87,female,Back Home,Home,Mobility as a service
+197,Aeromexico,Rodrigo Perez,PDX,SJC,1,10,2015,86,unspecified,Back Home,Home,Airport cab
+131,American Airlines,Ramon Rubio,SJC,GDL,16,7,2022,31,unspecified,Business/Work,Home,Public Transportation
+186,Aeromexico,Ramon Rubio,SJC,LAX,20,9,2015,52,female,On vacation/Pleasure,Home,Own car
+120,Volaris,Angela Hernandez,PDX,SJC,22,2,2023,64,female,Business/Work,Hotel,Mobility as a service
+72,Alaska,Andrea Mendez,JFK,LAX,2,7,2017,82,female,Back Home,Home,Airport cab
+183,Alaska,Miguel Vazquez,GDL,LAX,25,12,2018,2,male,On vacation/Pleasure,Short-term homestay,Mobility as a service
+144,Delta Airlines,Alejandra Roman,GDL,SJC,23,10,2014,84,male,Back Home,Home,Public Transportation
+134,Delta Airlines,Roberto Pena,SJC,GDL,5,2,2016,18,unspecified,On vacation/Pleasure,Short-term homestay,Airport cab
+43,Volaris,Paola Velazquez,PDX,GDL,18,3,2013,2,unspecified,Business/Work,Friend/Family,Own car
+67,Aeromexico,Valentina Espinoza,SJC,LAX,13,6,2016,13,female,Business/Work,Home,Mobility as a service
+186,Aeromexico,Juan Jose Rios,JFK,LAX,28,9,2019,28,unspecified,Business/Work,Home,Car rental
+25,Aeromexico,Juan Carlos Juarez,JFK,GDL,13,7,2019,42,unspecified,Business/Work,Home,Mobility as a service
+82,Aeromexico,Julia Perez,SJC,LAX,2,11,2022,48,undisclosed,Business/Work,Home,Pickup
+178,Volaris,Maximiliano Aguilar,JFK,GDL,26,10,2014,38,undisclosed,On vacation/Pleasure,Home,Own car
+176,American Airlines,Angela Hernandez,SJC,PDX,20,2,2019,68,unspecified,Back Home,Home,Own car
+125,Alaska,Bianca Vazquez,JFK,LAX,23,8,2013,69,undisclosed,Business/Work,Hotel,Public Transportation
+117,Alaska,Paulina Acosta,PDX,LAX,22,1,2022,28,unspecified,Business/Work,Home,Own car
+115,Alaska,Regina Aguilar,SJC,JFK,23,4,2015,12,unspecified,Back Home,Home,Airport cab
+43,Volaris,Ricardo Castro,SJC,GDL,14,9,2014,40,unspecified,Back Home,Home,Car rental
+142,Volaris,Daniel Castillo,GDL,SJC,23,6,2014,22,female,On vacation/Pleasure,Hotel,Pickup
+183,Volaris,Manuel Chavez,GDL,PDX,11,4,2019,35,female,On vacation/Pleasure,Hotel,Pickup
+197,Delta Airlines,Mauricio Ortiz,JFK,PDX,13,1,2020,16,male,On vacation/Pleasure,Short-term homestay,Own car
+31,Aeromexico,Gabriela Medina,JFK,GDL,18,5,2018,27,male,On vacation/Pleasure,Friend/Family,Airport cab
+12,Delta Airlines,Camila Ortiz,JFK,SJC,18,9,2022,58,female,Business/Work,Home,Pickup
+70,Alaska,Karla Diaz,SJC,GDL,9,7,2019,11,undisclosed,Business/Work,Friend/Family,Own car
+68,Aeromexico,Juan Jose Rios,GDL,JFK,29,4,2013,77,male,Business/Work,Friend/Family,Own car
+102,Volaris,Daniela Navarro,LAX,GDL,14,7,2016,16,undisclosed,On vacation/Pleasure,Friend/Family,Airport cab
+177,American Airlines,Emiliano Torres,JFK,PDX,18,10,2017,78,unspecified,On vacation/Pleasure,Friend/Family,Pickup
+76,Volaris,Cristina Flores,GDL,LAX,16,7,2017,81,male,On vacation/Pleasure,Hotel,Pickup
+17,American Airlines,Elena Vargas,PDX,GDL,15,6,2017,26,undisclosed,Business/Work,Short-term homestay,Car rental
+24,Aeromexico,David Duran,GDL,PDX,10,8,2017,16,female,Business/Work,Hotel,Public Transportation
+101,Delta Airlines,Mauricio Ortiz,PDX,JFK,20,2,2023,33,female,Back Home,Home,Pickup
+114,American Airlines,Miguel Jimenez,JFK,PDX,4,9,2021,4,undisclosed,Business/Work,Friend/Family,Public Transportation
+24,Aeromexico,Nadia Nunez,LAX,JFK,12,8,2013,28,male,Business/Work,Hotel,Pickup
+178,American Airlines,Mario Fuentes,JFK,PDX,24,6,2016,51,male,On vacation/Pleasure,Friend/Family,Public Transportation
+60,Volaris,Alberto Montes,GDL,JFK,27,3,2020,29,unspecified,Business/Work,Home,Car rental
+175,Alaska,Mariana Gallegos,GDL,LAX,14,10,2013,38,female,Business/Work,Short-term homestay,Public Transportation
+166,Aeromexico,Hector Flores,LAX,GDL,23,9,2015,71,male,On vacation/Pleasure,Hotel,Mobility as a service
+22,Delta Airlines,Estefania Garcia,LAX,GDL,30,8,2020,2,male,On vacation/Pleasure,Short-term homestay,Public Transportation
+148,Aeromexico,Isabella Rosas,JFK,GDL,8,2,2014,85,male,Back Home,Home,Own car
+198,Alaska,Carla Aguilar,PDX,GDL,16,3,2016,39,male,Business/Work,Hotel,Mobility as a service
+69,Volaris,Patricia Reyes,PDX,GDL,31,1,2021,75,male,On vacation/Pleasure,Short-term homestay,Own car
+150,Aeromexico,Alicia Hernandez,GDL,SJC,27,9,2021,86,unspecified,Back Home,Home,Car rental
+31,Delta Airlines,Estefania Garcia,PDX,JFK,25,9,2016,87,male,On vacation/Pleasure,Short-term homestay,Car rental
+144,Aeromexico,Laura Torres,SJC,PDX,2,7,2017,70,male,On vacation/Pleasure,Hotel,Airport cab
+54,Aeromexico,Andrea Mendez,LAX,GDL,18,12,2016,6,female,Back Home,Home,Own car
+64,Aeromexico,Jose Luis Rosales,PDX,GDL,28,4,2020,75,undisclosed,Back Home,Home,Airport cab
+135,American Airlines,Cristina Flores,PDX,SJC,17,5,2013,34,male,Back Home,Home,Airport cab
+48,American Airlines,Hector Flores,GDL,LAX,16,11,2015,57,female,On vacation/Pleasure,Short-term homestay,Own car
+39,Volaris,Juan Jose Rios,SJC,GDL,27,3,2014,58,unspecified,On vacation/Pleasure,Home,Airport cab
+183,Aeromexico,Paola Velazquez,LAX,SJC,20,7,2014,59,undisclosed,On vacation/Pleasure,Friend/Family,Public Transportation
+145,American Airlines,Roberto Roman,PDX,LAX,11,8,2019,60,undisclosed,Back Home,Home,Own car
+108,Alaska,Nadia Nunez,LAX,GDL,2,3,2014,27,male,Back Home,Home,Public Transportation
+15,American Airlines,Alberto Montes,SJC,PDX,24,2,2022,54,undisclosed,Business/Work,Friend/Family,Mobility as a service
+193,American Airlines,Ismael Mendoza,GDL,LAX,14,2,2018,60,unspecified,Business/Work,Hotel,Airport cab
+188,Delta Airlines,Joaquin Fernandez,GDL,PDX,31,8,2017,39,female,Back Home,Home,Pickup
+75,Alaska,Camila Ortiz,PDX,JFK,2,7,2014,4,female,Back Home,Home,Mobility as a service
+122,Volaris,Laura Torres,GDL,LAX,25,4,2022,70,male,Back Home,Home,Own car
