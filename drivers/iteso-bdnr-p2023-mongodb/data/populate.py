@@ -6,11 +6,9 @@ BASE_URL = "http://localhost:8000"
 
 
 def main():
-    with open("fligh_passangers.csv") as fd:
+    with open("flight_passengers.csv") as fd:
         flights_csv = csv.DictReader(fd)
         for flight in flights_csv:
-            del flight["flightID"]
-            flight["airlines"] = flight["airlines"].split("/")
             x = requests.post(BASE_URL+"/flight", json=flight)
             if not x.ok:
                 print(f"Failed to post flight {x} - {flight}")

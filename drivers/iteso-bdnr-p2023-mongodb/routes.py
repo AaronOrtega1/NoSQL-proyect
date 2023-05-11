@@ -18,57 +18,30 @@ def create_flight(request: Request, flight: Flight = Body(...)):
 
     return created_flight
 
+    
+@router.get("/month-count")
+async def get_month_count(request: Request):
+    """
+    Devuelve un conteo de los meses del más repetido al menos repetido.
+    """
+    # Buscar todos los vuelos en la base de datos y obtener su mes
+    months = list(request.app.database.flights.find({}, {"month": 1, "_id": 0}))
 
-@router.get("/", response_description="Get all flights by destination", response_model=List[Flight])
-def list_flights(request: Request, to: str = "", day: int = 0, month: int = 0, year: int = 0, limit: int = 0, skip: int = 0):
-    flight = list(request.app.database["flights"].find())
-    flight_by_destiny = list(
-        request.app.database["flights"].find({"destiny": to}))
-    flight_by_day = list(request.app.database["flights"].find({"day": day}))
-    flight_by_month = list(
-        request.app.database["flights"].find({"month": month}))
-    flight_by_year = list(request.app.database["flights"].find({"year": year}))
+    # Contar la cantidad de veces que aparece cada mes
+    month_counts = {}
+    for month in months:
+        month_num = int(month["month"])
+        if month_num not in month_counts:
+            month_counts[month_num] = 1
+        else:
+            month_counts[month_num] += 1
 
-    if (to != ""):
-        return flight_by_destiny
-    elif (day != 0):
-        return flight_by_day
-    elif (month != 0):
-        return flight_by_month
-    elif (year != 0):
-        return flight_by_year
-    else:
-        return flight
+    # Ordenar los meses por cantidad de veces que aparecen
+    sorted_months = sorted(month_counts.items(), key=lambda x: x[1], reverse=True)
 
-
-@router.get("/{id}", response_description="Get a single flight by id", response_model=Flight)
-def find_flight(id: str, request: Request):
-    if (flight := request.app.database["flights"].find_one({"_id": id})) is not None:
-        return flight
-
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                        detail=f"Flight with ID {id} not found")
-
-
-@router.put("/{id}", response_description="Update a flight by id", response_model=Flight)
-def update_flight(id: str, request: Request, flight: FlightUpdate = Body(...)):
-    if (flight := request.app.database["flights"].find_one({"_id": id})) is not None:
-        my_query = {"_id": id}
-        updated_flight = flight.dict(exlude_unset=True)
-        new_values = {"$set": {updated_flight}}
-        request.app.database["flights"].update_one(my_query, new_values)
-        return updated_flight
-
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                        detail=f"Flight with ID {id} not found")
-
-
-@router.delete("/{id}", response_description="Delete a flight")
-def delete_flight(id: str, request: Request, response: Response):
-    if (request.app.database["flights"].find_one({"_id": id})) is not None:
-        my_query = {"_id": id}
-        request.app.database["flights"].delete_one(my_query)
-        response.status_code = status.HTTP_204_NO_CONTENT
-
-    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                        detail=f"Flight with ID {id} not found")
+    # Devolver el resultado
+    return {
+        "month_count": [
+            {"month": str(month[0]), "count": month[1]} for month in sorted_months
+        ]
+    }

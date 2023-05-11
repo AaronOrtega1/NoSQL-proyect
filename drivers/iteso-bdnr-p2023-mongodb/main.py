@@ -7,7 +7,7 @@ from pymongo import MongoClient
 
 
 MONGODB_URI = os.getenv('MONGODB_URI', 'mongodb://localhost:27017')
-DB_NAME = os.getenv('MONGODB_DB_NAME', 'iteso')
+DB_NAME = os.getenv('MONGODB_DB_NAME', 'mongodb')
 
 app = FastAPI()
 
